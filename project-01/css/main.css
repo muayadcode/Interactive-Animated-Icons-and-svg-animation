@@ -1,0 +1,251 @@
+body {
+    margin: 6vh;
+    padding: 0;
+
+}
+
+/* I got some inspiration from examples on the internet to build this font effect  */
+
+
+
+
+header {
+    padding: 0;
+    margin-top: -20px;
+    margin-left: -7px;
+}
+
+h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 3em;
+    position: center;
+    color: rgb(37, 65, 56);
+    background-image: linear-gradient(rgb(253, 152, 0), rgb(253, 152, 0));
+    background-size: 100% 5px;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+h2:hover {
+    color: rgb(2, 94, 0);
+    background-size: 100% 100%;
+    background-position: 0% 100%;
+    transition: background-position .7s, background-size .5s ease-in-out;
+}
+
+
+svg {
+
+    border: 1px solid green
+}
+
+#mouth {
+    fill: aliceblue;
+}
+
+polyline {
+    fill: none;
+    stroke: black;
+    stroke-width: 3px;
+}
+
+.hole {
+    fill: whitesmoke;
+}
+
+#palm1 {
+    fill: rgb(255, 234, 151);
+
+}
+
+#palm2 {
+    fill: rgb(255, 234, 151);
+
+}
+
+#right-arm {
+
+    fill: rgb(72, 43, 0);
+    stroke-width: 7px;
+}
+
+.left_leg {
+    fill: rgb(72, 43, 0);
+}
+
+#legl {
+    fill: rgb(72, 43, 0);
+}
+
+.neck {
+    fill: rgb(253, 152, 0);
+}
+
+#hair {
+    fill: rgb(255, 224, 25);
+}
+
+#eye {
+    stroke: aliceblue;
+    stroke-width: 3px;
+}
+
+#eye1 {
+
+    stroke: rgb(0, 0, 0);
+    stroke-width: 4px;
+}
+
+#head {
+
+    fill: rgb(253, 152, 0);
+
+
+}
+
+#left-arm {
+    fill: rgb(72, 43, 0);
+}
+
+
+.green_field {
+    fill: rgba(37, 207, 37, 0.653);
+}
+
+#line {
+    stroke: rgb(0, 0, 0);
+    stroke-width: 8;
+    stroke-linecap: round;
+}
+
+#line1 {
+    stroke: rgb(0, 0, 0);
+    stroke-width: 6px;
+}
+
+#line3 {
+    stroke: rgb(255, 255, 255);
+    stroke-width: 5px;
+}
+
+
+
+#legp {
+    fill: rgb(72, 43, 0);
+    transform: rotate(-16deg);
+    transform-origin: center;
+
+
+}
+
+.rect3 {
+    fill: rgb(253, 152, 0);
+}
+
+.leg {
+
+    fill: rgb(72, 43, 0);
+
+
+    transform-origin: center top;
+    transform-box: fill-box;
+    animation: move 3s linear alternate infinite;
+}
+
+
+#ball {
+    fill: rgb(253, 152, 0);
+    animation: ball 1.5s linear alternate-reverse infinite;
+}
+
+.arm {
+    animation: arm 4s linear alternate-reverse infinite;
+}
+
+.arm2 {
+    animation: arml 3s linear alternate-reverse infinite;
+}
+
+
+
+
+
+@keyframes move {
+
+
+    0% {
+        transform: translatey(-20px);
+    }
+
+    50% {
+        transform: rotate(30deg);
+
+
+    }
+
+
+
+    100% {
+
+        transform: translatey(-20px);
+
+    }
+
+
+}
+
+
+@keyframes ball {
+
+    0% {
+        transform: rotate(360deg);
+    }
+
+    50% {
+        transform: rotate(360deg);
+    }
+
+    100% {
+
+
+        transform: translate(1150px);
+    }
+
+
+
+
+}
+
+@keyframes arm {
+
+
+
+    25% {
+
+        transform: rotatey(-30deg);
+    }
+}
+
+@keyframes arml {
+
+
+    0% {
+
+        transform: translateY(-3px);
+    }
+
+
+    25% {
+
+        transform: translateY(-7px);
+    }
+
+    50% {
+
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: rotatey(-10deg);
+    }
+}
